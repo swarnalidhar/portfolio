@@ -1,21 +1,26 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header className="navbar">
       {/* Left nav (menu) */}
       <nav className="navbar-menu">
-        <button className="nav-pill nav-pill-active">Home</button>
-        <button className="nav-link">About</button>
-        <button className="nav-link">Work</button>
-        <button className="nav-link">Contact</button>
+        <Link className="nav-pill nav-pill-active" to="/">Home</Link>
+        <Link className="nav-link" to="/about">About</Link>
+        <Link className="nav-link" to="/work">Work</Link>
+        <Link className="nav-link" to="/contact">Contact</Link>
       </nav>
 
       {/* Right side – Download CV */}
       <div className="navbar-right">
         {/* use Link or <a> depending on how you serve the file */}
         <a href="/cv.pdf" className="download-link">
-          Download CV <span className="download-icon">⬇️</span>
+          Download CV <span className="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+            </svg>
+          </span>
         </a>
       </div>
     </header>
