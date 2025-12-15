@@ -1,23 +1,24 @@
 
 const Home = () => {
   return (
-    <main className="hero">
+    <main className="hero ">
       {/* LEFT SIDE */}
       <section className="hero-left">
         <div className="hero-heading">
           <p className="hero-hi">Hi! I'm</p>
           <h1 className="hero-name">Swarnali</h1>
-          <span style={{display: "inline-block"}}>
-            <hr style={{
-              width: '50%',             // Set width
-              margin: '20px auto'       // Add vertical space
+          <div style={{display: "flex"}}>
+            <hr style={{width: '40%',
+              margin: "auto 1px auto auto",
+              borderRadius: "5px",
+              border: "1px solid black",
+              opacity: 1
             }} /> An UI/UX Designer
-          </span>
-          
+          </div>
         </div>
           
 
-        <p className="hero-description">
+        <p className="hero-description ">
           A dedicated UI/UX designer focused on creating intuitive,
           user-centered digital experiences. With a strong eye for detail and a
           problem-solving mindset, I turn complex challenges into clear and

@@ -7,9 +7,12 @@
 }
 
 body {
-  margin: 10%;
+  margin: 10% 20%;
   font-family: "Georgia", "Times New Roman", serif;
   background-color: #f5d9a6; /* warm beige */
+  padding: 0;          /* Removes default inner spacing */
+  height: 100%;        /* CRITICAL: Makes HTML and BODY fill the window */
+  overflow: hidden;    /* PREVENTS SCROLLING: Hides any content that tries to go past the edge */
 }
 
 .body-color {
@@ -51,6 +54,7 @@ body {
   border-radius: 999px;
   background-color: #7e8a54; /* greenish */
   color: #ffffff;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -86,6 +90,10 @@ body {
   align-items: center;
 }
 
+.red-border {
+  border: 2px solid red;
+}
+
 /* LEFT */
 
 .hero-left {
@@ -106,8 +114,8 @@ body {
 }
 
 .hero-name {
-  font-family: "Playfair Display", "Times New Roman", serif;
-  font-size: 3rem;
+  font-family : cursive;
+  font-size: 5rem;
   color: #7d3b29;
   font-weight: 500;
 }
@@ -118,7 +126,6 @@ body {
 }
 
 .hero-description {
-  max-width: 34rem;
   font-size: 0.95rem;
   line-height: 1.7;
   color: #4d402b;
